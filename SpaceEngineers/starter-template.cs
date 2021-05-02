@@ -91,11 +91,18 @@ namespace SpaceEngineers.UWBlockPrograms.BatteryMonitor
             List<IMyCockpit> cockpits = new List<IMyCockpit>();
             GridTerminalSystem.GetBlocksOfType(cockpits);
 
+            var cockpit = cockpits.FirstOrDefault();
+
+            if(!(cockpit?.IsUnderControl ?? false))
+            {
+                return;
+            }
+
 
 
             Dictionary<ThrustDirection, double> thrust = new Dictionary<ThrustDirection, double>();
 
-            foreach(ThrustDirection t in Enum.GetValues(typeof(ThrustDirection)).Cast<ThrustDirection>())
+            foreach (ThrustDirection t in Enum.GetValues(typeof(ThrustDirection)).Cast<ThrustDirection>())
             {
                 thrust[t] = 0;
             }
@@ -105,7 +112,7 @@ namespace SpaceEngineers.UWBlockPrograms.BatteryMonitor
                 if (t.IsFunctional)
                 {
                     ThrustDirection d = GetThrustDirection(t.GridThrustDirection);
-                    thrust[d] += t.MaxThrust;
+                    thrust[d] += t.MaxEffectiveThrust;
                 }
             }
 
@@ -120,7 +127,9 @@ namespace SpaceEngineers.UWBlockPrograms.BatteryMonitor
 
             double g = cockpits[0].GetNaturalGravity().Length();
 
-            double Fg = (cockpits[0].CalculateShipMass().TotalMass * cockpits[0].GetNaturalGravity().Length());
+            double m = cockpits[0].CalculateShipMass().TotalMass;
+
+            double Fg = (m * cockpits[0].GetNaturalGravity().Length());
 
             foreach (ThrustDirection t in Enum.GetValues(typeof(ThrustDirection)).Cast<ThrustDirection>())
             {
@@ -130,14 +139,13 @@ namespace SpaceEngineers.UWBlockPrograms.BatteryMonitor
 
             string thrustOutput = $"M = {cockpits[0].CalculateShipMass().TotalMass / 1000:0.##}T\n";
 
-
-            thrustOutput += $"U = {maxSpeed[ThrustDirection.Down]:0.##} - {thrust[ThrustDirection.Down] / g / 1000:0.##}T \n";
-            thrustOutput += $"F = {maxSpeed[ThrustDirection.Backward]:0.##} - {thrust[ThrustDirection.Backward] / g / 1000:0.##}T \n\n";
-            thrustOutput += $"L = {maxSpeed[ThrustDirection.Right]:0.##} - {thrust[ThrustDirection.Right] / g / 1000:0.##}T \n";
-            thrustOutput += $"R = {maxSpeed[ThrustDirection.Left]:0.##} - {thrust[ThrustDirection.Left] / g / 1000:0.##}T \n";
-            thrustOutput += $"D = {maxSpeed[ThrustDirection.Up]:0.##} - {thrust[ThrustDirection.Up] / g / 1000:0.##}T \n";
-            thrustOutput += $"B = {maxSpeed[ThrustDirection.Forward]:0.##} - {thrust[ThrustDirection.Forward] / g / 1000:0.##}T \n";
-
+            thrustOutput = PrintThrust(thrust, maxSpeed, g, m, "U", ThrustDirection.Down);
+            thrustOutput += PrintThrust(thrust, maxSpeed, g, m, "B", ThrustDirection.Forward);
+            thrustOutput += "\n";
+            thrustOutput += PrintThrust(thrust, maxSpeed, g, m, "F", ThrustDirection.Backward);
+            thrustOutput += PrintThrust(thrust, maxSpeed, g, m, "L", ThrustDirection.Right);
+            thrustOutput += PrintThrust(thrust, maxSpeed, g, m, "R", ThrustDirection.Left);
+            thrustOutput += PrintThrust(thrust, maxSpeed, g, m, "D", ThrustDirection.Up);
 
             var surface = cockpits[0].GetSurface(0);
 
@@ -146,6 +154,10 @@ namespace SpaceEngineers.UWBlockPrograms.BatteryMonitor
             Echo(thrustOutput);
         }
 
+        private static string PrintThrust(Dictionary<ThrustDirection, double> thrust, Dictionary<ThrustDirection, double> maxSpeed, double g, double m, string dir, ThrustDirection direction)
+        {
+            return $"{dir} = {maxSpeed[direction]:0.##} | {thrust[direction] / m:0.##} | {thrust[direction] / g / 1000:0.##}T \n";
+        }
 
     }
 }

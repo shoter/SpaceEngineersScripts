@@ -85,73 +85,68 @@ namespace SpaceEngineers.UWBlockPrograms.BatteryMonitor
 
         public void Main(string args)
         {
-            Runtime.UpdateFrequency = UpdateFrequency.Update100;
-            List<IMyThrust> thrusters = new List<IMyThrust>();
-            GridTerminalSystem.GetBlocksOfType<IMyThrust>(thrusters);
-            List<IMyCockpit> cockpits = new List<IMyCockpit>();
-            GridTerminalSystem.GetBlocksOfType(cockpits);
+                Runtime.UpdateFrequency = UpdateFrequency.Update100;
+                List<IMyThrust> thrusters = new List<IMyThrust>();
+                GridTerminalSystem.GetBlocksOfType<IMyThrust>(thrusters);
+                List<IMyCockpit> cockpits = new List<IMyCockpit>();
+                GridTerminalSystem.GetBlocksOfType(cockpits);
 
-            var cockpit = cockpits.FirstOrDefault();
 
-            if(!(cockpit?.IsUnderControl ?? false))
-            {
-                return;
-            }
+                var cockpit = cockpits.FirstOrDefault();
 
 
 
-            Dictionary<ThrustDirection, double> thrust = new Dictionary<ThrustDirection, double>();
+                Dictionary<ThrustDirection, double> thrust = new Dictionary<ThrustDirection, double>();
 
-            foreach (ThrustDirection t in Enum.GetValues(typeof(ThrustDirection)).Cast<ThrustDirection>())
-            {
-                thrust[t] = 0;
-            }
+                foreach (ThrustDirection t in Enum.GetValues(typeof(ThrustDirection)).Cast<ThrustDirection>())
+                {
+                    thrust[t] = 0;
+                }
+
 
             foreach (var t in thrusters)
-            {
-                if (t.IsFunctional)
                 {
-                    ThrustDirection d = GetThrustDirection(t.GridThrustDirection);
-                    thrust[d] += t.MaxEffectiveThrust;
+                    if (t.IsFunctional)
+                    {
+                        ThrustDirection d = GetThrustDirection(t.GridThrustDirection);
+                        thrust[d] += t.MaxEffectiveThrust;
+                    }
                 }
-            }
 
-            Dictionary<ThrustDirection, double> maxSpeed = new Dictionary<ThrustDirection, double>();
+                Dictionary<ThrustDirection, double> maxSpeed = new Dictionary<ThrustDirection, double>();
 
-            foreach (ThrustDirection t in Enum.GetValues(typeof(ThrustDirection)).Cast<ThrustDirection>())
-            {
-                maxSpeed[t] = 0;
-            }
+                foreach (ThrustDirection t in Enum.GetValues(typeof(ThrustDirection)).Cast<ThrustDirection>())
+                {
+                    maxSpeed[t] = 0;
+                }
 
-            string o = "";
+                string o = "";
 
-            double g = cockpits[0].GetNaturalGravity().Length();
+                double g = cockpits[0].GetNaturalGravity().Length();
 
-            double m = cockpits[0].CalculateShipMass().TotalMass;
+                double m = cockpits[0].CalculateShipMass().TotalMass;
 
-            double Fg = (m * cockpits[0].GetNaturalGravity().Length());
+                double Fg = (m * cockpits[0].GetNaturalGravity().Length());
 
-            foreach (ThrustDirection t in Enum.GetValues(typeof(ThrustDirection)).Cast<ThrustDirection>())
-            {
-                maxSpeed[t] = (thrust[t] - Fg) / cockpits[0].CalculateShipMass().TotalMass;
-                o += $"{t} = {maxSpeed[t]}\n";
-            }
+                foreach (ThrustDirection t in Enum.GetValues(typeof(ThrustDirection)).Cast<ThrustDirection>())
+                {
+                    maxSpeed[t] = (thrust[t] - Fg) / cockpits[0].CalculateShipMass().TotalMass;
+                    o += $"{t} = {maxSpeed[t]}\n";
+                }
 
-            string thrustOutput = $"M = {cockpits[0].CalculateShipMass().TotalMass / 1000:0.##}T\n";
+                string thrustOutput = PrintThrust(thrust, maxSpeed, g, m, "U", ThrustDirection.Down);
+                thrustOutput += PrintThrust(thrust, maxSpeed, g, m, "B", ThrustDirection.Forward);
+                thrustOutput += "\n";
+                thrustOutput += PrintThrust(thrust, maxSpeed, g, m, "F", ThrustDirection.Backward);
+                thrustOutput += PrintThrust(thrust, maxSpeed, g, m, "L", ThrustDirection.Right);
+                thrustOutput += PrintThrust(thrust, maxSpeed, g, m, "R", ThrustDirection.Left);
+                thrustOutput += PrintThrust(thrust, maxSpeed, g, m, "D", ThrustDirection.Up);
 
-            thrustOutput = PrintThrust(thrust, maxSpeed, g, m, "U", ThrustDirection.Down);
-            thrustOutput += PrintThrust(thrust, maxSpeed, g, m, "B", ThrustDirection.Forward);
-            thrustOutput += "\n";
-            thrustOutput += PrintThrust(thrust, maxSpeed, g, m, "F", ThrustDirection.Backward);
-            thrustOutput += PrintThrust(thrust, maxSpeed, g, m, "L", ThrustDirection.Right);
-            thrustOutput += PrintThrust(thrust, maxSpeed, g, m, "R", ThrustDirection.Left);
-            thrustOutput += PrintThrust(thrust, maxSpeed, g, m, "D", ThrustDirection.Up);
-
-            var surface = cockpits[0].GetSurface(0);
+                var surface = cockpits[0].GetSurface(0);
 
 
-            surface.WriteText(thrustOutput);
-            Echo(thrustOutput);
+                surface.WriteText(thrustOutput);
+                Echo(thrustOutput);
         }
 
         private static string PrintThrust(Dictionary<ThrustDirection, double> thrust, Dictionary<ThrustDirection, double> maxSpeed, double g, double m, string dir, ThrustDirection direction)

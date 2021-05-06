@@ -87,12 +87,17 @@ namespace SpaceEngineers.UWBlockPrograms.BatteryMonitor
         {
                 Runtime.UpdateFrequency = UpdateFrequency.Update100;
                 List<IMyThrust> thrusters = new List<IMyThrust>();
-                GridTerminalSystem.GetBlocksOfType<IMyThrust>(thrusters);
+                GridTerminalSystem.GetBlocksOfType<IMyThrust>(thrusters, x => x.CubeGrid == Me.CubeGrid);
                 List<IMyCockpit> cockpits = new List<IMyCockpit>();
-                GridTerminalSystem.GetBlocksOfType(cockpits);
+                GridTerminalSystem.GetBlocksOfType(cockpits, x => x.CubeGrid == Me.CubeGrid);
 
 
                 var cockpit = cockpits.FirstOrDefault();
+
+                if (!(cockpit?.IsUnderControl ?? false))
+                {
+                    return;
+                }
 
 
 
@@ -104,7 +109,7 @@ namespace SpaceEngineers.UWBlockPrograms.BatteryMonitor
                 }
 
 
-            foreach (var t in thrusters)
+                foreach (var t in thrusters)
                 {
                     if (t.IsFunctional)
                     {
@@ -147,6 +152,7 @@ namespace SpaceEngineers.UWBlockPrograms.BatteryMonitor
 
                 surface.WriteText(thrustOutput);
                 Echo(thrustOutput);
+
         }
 
         private static string PrintThrust(Dictionary<ThrustDirection, double> thrust, Dictionary<ThrustDirection, double> maxSpeed, double g, double m, string dir, ThrustDirection direction)

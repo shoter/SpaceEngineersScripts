@@ -59,6 +59,10 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
 
         public void SetLength(List<IMyPistonBase> pistons, float length, float speed)
         {
+            if(Equals(GetCurrentLength(pistons), length))
+            {
+                return;
+            }
             for (int i = 0; i < pistons.Count; ++i)
             {
                 if (length > 0)

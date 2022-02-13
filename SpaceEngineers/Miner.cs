@@ -92,6 +92,12 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
             }
         }
 
+        public float GetMaxLength(List<IMyPistonBase> pistons)
+        {
+            return pistons.Count * 10f;
+        }
+
+
         public bool IsMaxLengthReached(List<IMyPistonBase> pistons)
         {
             for (int i = 0; i < pistons.Count; ++i)
@@ -205,13 +211,13 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
                 case State.Inc:
                     {
                         x += step;
-                        if(x >= 30f)
+                        if(x >= GetMaxLength(xPistons))
                         {
                             x = 0f;
                             y += step;
                         }
 
-                        if(y > 30f)
+                        if(y > GetMaxLength(yPistons))
                         {
                             state = State.Idle;
                         };
@@ -234,5 +240,6 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
 
             }
         }
+        // end
     }
 }

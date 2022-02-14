@@ -19,30 +19,23 @@ using VRage.Game.ObjectBuilders.Definitions;
 // Change this namespace for each script you create.
 namespace SpaceEngineers.UWBlockPrograms.Miner
 {
-    public sealed class Program : MyGridProgram
+    public sealed class Hinge : MyGridProgram
     {
         // Your code goes between the next #endregion and #region
 
-        enum State
+        public enum State
         {
-            ZDown,
-            ZUp,
-            Inc,
-            PositionChange,
-            Idle
-        }
+            Increase,
+            Decrease,
+            MoveForward
+        };
 
-        static State state = State.ZDown;
-        static float x = 0;
-        static float y = 0;
-        static float step = 3;
-        public float zSpeed = 0.2f;
-        public float speed = 2f;
+        public static State state = State.Increase;
+        public static float speed = 1f;
+        public static string hingeName = "Miner.Hinge";
+        public static string motorPrefix = "Miner";
+        public static float length = 0f;
 
-
-        public Program()
-        {
-        }
 
         public int GetLength(List<IMyPistonBase> pistons) => pistons.Count * 10;
 
@@ -59,7 +52,7 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
 
         public void SetLength(List<IMyPistonBase> pistons, float length, float speed)
         {
-            if(Equals(GetCurrentLength(pistons), length))
+            if (Equals(GetCurrentLength(pistons), length))
             {
                 return;
             }
@@ -153,100 +146,69 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
 
         public void SetUp(List<IMyPistonBase> pistons)
         {
-            foreach(var p in pistons)
+            foreach (var p in pistons)
             {
                 p.MaxLimit = 10f;
             }
         }
 
+        public static bool Equal(float a, float b, float diff)
+        {
+            return Math.Abs(a - b) <= diff;
+        }
 
 
         public void Main(string args)
         {
             Runtime.UpdateFrequency = UpdateFrequency.Update100;
 
-            List<IMyPistonBase> xPistons = new List<IMyPistonBase>();
-            List<IMyPistonBase> yPistons = new List<IMyPistonBase>();
-            List<IMyPistonBase> zPistons = new List<IMyPistonBase>();
-            List<IMyPistonBase> all = new List<IMyPistonBase>();
+            var hinge = GridTerminalSystem.GetBlockWithName(hingeName) as IMyMotorStator;
+            List<IMyPistonBase> pistons = new List<IMyPistonBase>();
 
-            GridTerminalSystem.GetBlocksOfType<IMyPistonBase>(xPistons, p => p.CustomName.Contains("X") && p.CustomName.StartsWith("Miner"));
-            GridTerminalSystem.GetBlocksOfType<IMyPistonBase>(yPistons, p => p.CustomName.Contains("Y") && p.CustomName.StartsWith("Miner"));
-            GridTerminalSystem.GetBlocksOfType<IMyPistonBase>(zPistons, p => p.CustomName.Contains("Z") && p.CustomName.StartsWith("Miner"));
-            GridTerminalSystem.GetBlocksOfType<IMyPistonBase>(all);
+            GridTerminalSystem.GetBlocksOfType<IMyPistonBase>(pistons, p => p.CustomName.StartsWith(motorPrefix));
 
-            Echo($"State = {state}");
-            Echo($"{x}, {y}");
-            Echo($"x = {GetCurrentLength(xPistons)}");
-            Echo($"y = {GetCurrentLength(yPistons)}");
-            Echo($"z = {GetCurrentLength(zPistons)}");
+            if (hinge == null)
+            {
+                Echo("Brak Hinge. Ustaw dobrze nazwe buraku!");
 
-            SetLength(xPistons, x, speed);
-            SetLength(yPistons, y, speed);
+                return;
+            }
 
-
-
+            Echo($"State = {state} {hinge.LowerLimitRad} | {hinge.Angle} | {hinge.UpperLimitRad}");
+            Echo($"Length = {length}");
+            Echo($"Real Length = {GetCurrentLength(pistons)} ( {pistons.Count} )");
             switch (state)
             {
-                case State.ZDown:
+                case State.Increase:
                     {
-                        SetMaxLength(zPistons, zSpeed);
-                        if (IsMaxLengthReached(zPistons))
+                        hinge.TargetVelocityRPM = speed * 0.25f;
+                        if (Equal(hinge.UpperLimitRad, hinge.Angle, 0.01f))
                         {
-                            state = State.ZUp;
+                            state = State.Decrease;
                         }
                         break;
                     }
-                case State.ZUp:
+                case State.Decrease:
                     {
-                        Reset(zPistons, zSpeed * 2);
-                        if (IsMinLengthReached(zPistons))
+                        hinge.TargetVelocityRPM = speed * -0.25f;
+                        if (Equal(hinge.LowerLimitRad, hinge.Angle, 0.01f))
                         {
-                            state = State.Inc;
-                        }
-
-                        break;
-                    }
-
-                case State.Inc:
-                    {
-                        x += step;
-                        if(x >= GetMaxLength(xPistons))
-                        {
-                            x = 0f;
-                            y += step;
-                        }
-
-                        if(y > GetMaxLength(yPistons))
-                        {
-                            state = State.Idle;
-                        };
-
-                        state = State.PositionChange;
-                        SetLength(xPistons, x, speed);
-                        SetLength(yPistons, y, speed);
-
-                        break;
-                    }
-                case State.PositionChange:
-                    {
-                        if(IsLengthReached(xPistons, x) && IsLengthReached(yPistons, y))
-                        {
-                            state = State.ZDown;
+                            state = State.MoveForward;
                         }
 
                         break;
                     }
-                case State.Idle:
+                case State.MoveForward:
                     {
-                        SetLength(xPistons, 0, speed);
-                        SetLength(yPistons, 0, speed);
-                        SetLength(zPistons, 0, speed);
+                        length += 1f;
+                        SetLength(pistons, length, 0.1f);
+                        state = State.Increase;
                         break;
                     }
-
             }
+
         }
         // end
     }
 }
+

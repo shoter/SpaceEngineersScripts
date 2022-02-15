@@ -54,6 +54,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hinge.cs" />
+    <Compile Include="Hinge3D.cs" />
     <Compile Include="Miner.cs" />
     <Compile Include="starter-template.cs" />
   </ItemGroup>

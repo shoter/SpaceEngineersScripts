@@ -27,7 +27,8 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
         {
             Increase,
             Decrease,
-            MoveForward
+            MoveForward,
+            Reset,
         };
 
         public static State state = State.Increase;
@@ -174,6 +175,8 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
                 return;
             }
 
+            length = GetCurrentLength(pistons);
+
             Echo($"State = {state} {hinge.LowerLimitRad} | {hinge.Angle} | {hinge.UpperLimitRad}");
             Echo($"Length = {length}");
             Echo($"Real Length = {GetCurrentLength(pistons)} ( {pistons.Count} )");
@@ -203,6 +206,11 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
                         length += 1f;
                         SetLength(pistons, length, 0.1f);
                         state = State.Increase;
+                        break;
+                    }
+                case State.Reset:
+                    {
+                        SetLength(pistons, 0, 0.3f);
                         break;
                     }
             }

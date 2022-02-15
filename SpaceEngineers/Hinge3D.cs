@@ -25,19 +25,22 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
 
         public enum State
         {
-            FirstMove,
-            SecondMove,
+            Increase,
+            Decrease,
+            Reseting,
+            Waiting,
             MoveForward,
-            Reset,
+            Reset
         };
 
-        public static State state = State.FirstMove;
+        public static State state = State.Increase;
+        public static State secondState = State.Increase;
         public static float speed = 1f;
-        public static float firstAngle = 0;
         public static string hingeName = "Miner.Hinge";
-        public static string secondHinge = "Miner.Hinge2";
+        public static string secondHingeName = "Miner.Hinge2";
         public static string motorPrefix = "Miner";
         public static float length = 0f;
+        public static float direction = 1f;
 
 
         public int GetLength(List<IMyPistonBase> pistons) => pistons.Count * 10;
@@ -160,16 +163,54 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
             return Math.Abs(a - b) <= diff;
         }
 
-        public static bool IsCompleted(IMyMotorStator motor)
+        public void Second(IMyMotorStator hinge2)
         {
-            if (motor.TargetVelocityRad > 0)
+            switch (secondState)
             {
-                return Equal(motor.Angle, motor.UpperLimitRad, 0.1f);
+                case State.Increase:
+                    {
+                        if (Equal(hinge2.Angle, (float)(Math.PI / 2), 0.01f))
+                        {
+                            hinge2.TargetVelocityRad = speed * -0.25f;
+                            secondState = State.Decrease;
+                        }
+
+                        else if (Equal(hinge2.UpperLimitRad, hinge2.Angle, 0.01f))
+                        {
+                            hinge2.UpperLimitDeg = hinge2.UpperLimitDeg + 2;
+                            hinge2.LowerLimitDeg = hinge2.UpperLimitDeg - 1;
+                        }
+
+                        break;
+                    }
+                case State.Decrease:
+                    {
+                        if (Equal(hinge2.Angle, (float)(-Math.PI / 2), 0.01f))
+                        {
+                            hinge2.TargetVelocityRad = speed * 0.25f;
+                            hinge2.LowerLimitRad = hinge2.UpperLimitRad = 0;
+                            secondState = State.Reseting;
+                        }
+
+                        else if (Equal(hinge2.LowerLimitDeg, hinge2.Angle, 0.01f))
+                        {
+                            hinge2.LowerLimitDeg = hinge2.LowerLimitDeg - 2;
+                            hinge2.UpperLimitDeg = hinge2.LowerLimitDeg + 1;
+                        }
+                        
+                        break;
+                    }
+                case State.Reseting:
+                    {
+                        if(Equal(hinge2.Angle, 0, 0.1f))
+                        {
+                            state = State.MoveForward;
+                            secondState = State.Increase;
+                        }
+                        break;
+                    }
             }
-            else
-            {
-                return Equal(motor.Angle, motor.LowerLimitRad, 0.1f);
-            }
+
         }
 
 
@@ -178,26 +219,64 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
             Runtime.UpdateFrequency = UpdateFrequency.Update100;
 
             var hinge = GridTerminalSystem.GetBlockWithName(hingeName) as IMyMotorStator;
-            var hinge2 = GridTerminalSystem.GetBlockWithName(secondHinge) as IMyMotorStator;
+            var hinge2 = GridTerminalSystem.GetBlockWithName(secondHingeName) as IMyMotorStator;
+
             List<IMyPistonBase> pistons = new List<IMyPistonBase>();
 
             GridTerminalSystem.GetBlocksOfType<IMyPistonBase>(pistons, p => p.CustomName.StartsWith(motorPrefix));
 
-            if (hinge == null || hinge2 == null)
+            if (hinge == null)
             {
                 Echo("Brak Hinge. Ustaw dobrze nazwe buraku!");
 
                 return;
             }
 
-            Echo($"State = {state} {hinge.LowerLimitRad} | {hinge.Angle} | {hinge.UpperLimitRad}");
+            Echo($"State = {state} {hinge.LowerLimitRad:0.00} | {hinge.Angle:0.00} | {hinge.UpperLimitRad:0.00}");
+            Echo($"State = {secondState} {hinge2.LowerLimitRad:0.00} | {hinge2.Angle:0.00} | {hinge2.UpperLimitRad:0.00}");
             Echo($"Length = {length}");
             Echo($"Real Length = {GetCurrentLength(pistons)} ( {pistons.Count} )");
             switch (state)
             {
-                case State.FirstMove:
+                case State.Increase:
                     {
+                        hinge.TargetVelocityRPM = speed * 0.25f;
+                        if (Equal(hinge.UpperLimitRad, hinge.Angle, 0.01f))
+                        {
+                            state = State.Decrease;
+                        }
+                        break;
+                    }
+                case State.Decrease:
+                    {
+                        hinge.TargetVelocityRPM = speed * -0.25f;
+                        if (Equal(hinge.LowerLimitRad, hinge.Angle, 0.01f))
+                        {
+                            //
+                            state = State.Waiting;
+                        }
 
+                        break;
+                    }
+                case State.Waiting:
+                    {
+                        Second(hinge2);
+                        if(state != State.MoveForward)
+                        {
+                            state = State.Increase;
+                        }
+                        break;
+                    }
+                case State.MoveForward:
+                    {
+                        length += 1f;
+                        SetLength(pistons, length, 0.1f);
+                        state = State.Increase;
+                        break;
+                    }
+                case State.Reset:
+                    {
+                        SetLength(pistons, 0, 0.5f);
                         break;
                     }
             }

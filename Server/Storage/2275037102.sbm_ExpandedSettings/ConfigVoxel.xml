@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ExpandedVoxelSettingsConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OreYieldModifiers>
+    <OreYieldData>
+      <OreYieldData OreType="Stone" OreYieldMultiplier="-1" />
+      <OreYieldData OreType="Ice" OreYieldMultiplier="-1" />
+      <OreYieldData OreType="Iron" OreYieldMultiplier="-1" />
+      <OreYieldData OreType="Nickel" OreYieldMultiplier="-1" />
+      <OreYieldData OreType="Silicon" OreYieldMultiplier="-1" />
+      <OreYieldData OreType="Cobalt" OreYieldMultiplier="-1" />
+      <OreYieldData OreType="Magnesium" OreYieldMultiplier="-1" />
+      <OreYieldData OreType="Silver" OreYieldMultiplier="-1" />
+      <OreYieldData OreType="Gold" OreYieldMultiplier="-1" />
+      <OreYieldData OreType="Platinum" OreYieldMultiplier="-1" />
+      <OreYieldData OreType="Uranium" OreYieldMultiplier="-1" />
+      <OreYieldData OreType="Organic" OreYieldMultiplier="-1" />
+    </OreYieldData>
+  </OreYieldModifiers>
+  <AsteroidModifiers>
+    <AsteroidOreData>
+      <AsteroidOreData OreType="Ice" OreFrequencyMultiplier="-1" />
+      <AsteroidOreData OreType="Iron" OreFrequencyMultiplier="-1" />
+      <AsteroidOreData OreType="Nickel" OreFrequencyMultiplier="-1" />
+      <AsteroidOreData OreType="Silicon" OreFrequencyMultiplier="-1" />
+      <AsteroidOreData OreType="Cobalt" OreFrequencyMultiplier="-1" />
+      <AsteroidOreData OreType="Magnesium" OreFrequencyMultiplier="-1" />
+      <AsteroidOreData OreType="Silver" OreFrequencyMultiplier="-1" />
+      <AsteroidOreData OreType="Gold" OreFrequencyMultiplier="-1" />
+      <AsteroidOreData OreType="Platinum" OreFrequencyMultiplier="-1" />
+      <AsteroidOreData OreType="Uranium" OreFrequencyMultiplier="-1" />
+    </AsteroidOreData>
+  </AsteroidModifiers>
+  <PlanetOreModifiers>
+    <PlanetOreModifierIsActive>false</PlanetOreModifierIsActive>
+    <PlanetData>
+      <PlanetOreModifierData PlanetName="Pertam">
+        <OreData>
+          <OreData OreType="Iron" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Nickel" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silicon" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Cobalt" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Magnesium" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silver" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Gold" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+        </OreData>
+      </PlanetOreModifierData>
+      <PlanetOreModifierData PlanetName="EarthLike">
+        <OreData>
+          <OreData OreType="Ice" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Iron" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Nickel" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silicon" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Cobalt" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Magnesium" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silver" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Gold" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+        </OreData>
+      </PlanetOreModifierData>
+      <PlanetOreModifierData PlanetName="Alien">
+        <OreData>
+          <OreData OreType="Ice" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Iron" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Nickel" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silicon" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Cobalt" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Magnesium" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silver" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Gold" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+        </OreData>
+      </PlanetOreModifierData>
+      <PlanetOreModifierData PlanetName="Mars">
+        <OreData>
+          <OreData OreType="Ice" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Iron" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Nickel" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silicon" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Cobalt" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Magnesium" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silver" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Gold" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+        </OreData>
+      </PlanetOreModifierData>
+      <PlanetOreModifierData PlanetName="Moon">
+        <OreData>
+          <OreData OreType="Ice" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Iron" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Nickel" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silicon" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Cobalt" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Magnesium" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silver" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Gold" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Platinum" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+        </OreData>
+      </PlanetOreModifierData>
+      <PlanetOreModifierData PlanetName="Europa">
+        <OreData>
+          <OreData OreType="Ice" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Iron" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Nickel" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silicon" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Cobalt" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Magnesium" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silver" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Gold" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Platinum" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+        </OreData>
+      </PlanetOreModifierData>
+      <PlanetOreModifierData PlanetName="Titan">
+        <OreData>
+          <OreData OreType="Ice" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Iron" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Nickel" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silicon" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Cobalt" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Magnesium" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silver" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Gold" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Platinum" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+        </OreData>
+      </PlanetOreModifierData>
+      <PlanetOreModifierData PlanetName="Triton">
+        <OreData>
+          <OreData OreType="Iron" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Nickel" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silicon" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Cobalt" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Magnesium" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silver" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Gold" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+        </OreData>
+      </PlanetOreModifierData>
+      <PlanetOreModifierData PlanetName="TerraAqua">
+        <OreData>
+          <OreData OreType="Iron" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Nickel" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silicon" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Cobalt" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Magnesium" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silver" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Gold" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Platinum" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Uranium" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+        </OreData>
+      </PlanetOreModifierData>
+      <PlanetOreModifierData PlanetName="Terra">
+        <OreData>
+          <OreData OreType="Iron" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Nickel" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silicon" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Cobalt" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Magnesium" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silver" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Gold" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Platinum" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Uranium" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+        </OreData>
+      </PlanetOreModifierData>
+      <PlanetOreModifierData PlanetName="Kimi">
+        <OreData>
+          <OreData OreType="Magnesium" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Gold" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Uranium" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+        </OreData>
+      </PlanetOreModifierData>
+      <PlanetOreModifierData PlanetName="Qun">
+        <OreData>
+          <OreData OreType="Ice" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Iron" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Nickel" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silicon" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Cobalt" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Magnesium" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Silver" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Gold" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+          <OreData OreType="Platinum" DepthMultiplier="-1" ThicknessMultiplier="-1" />
+        </OreData>
+      </PlanetOreModifierData>
+      <PlanetOreModifierData PlanetName="SmallSPiderFake">
+        <OreData />
+      </PlanetOreModifierData>
+    </PlanetData>
+  </PlanetOreModifiers>
+</ExpandedVoxelSettingsConfig>

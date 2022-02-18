@@ -193,7 +193,7 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
                     }
                 case State.Decrease:
                     {
-                        hinge.TargetVelocityRPM = speed * -0.25f;
+                        hinge.TargetVelocityRPM = speed * -0.5f;
                         if (Equal(hinge.LowerLimitRad, hinge.Angle, 0.01f))
                         {
                             state = State.MoveForward;
@@ -204,7 +204,7 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
                 case State.MoveForward:
                     {
                         length += 1f;
-                        SetLength(pistons, length, 0.1f);
+                        SetLength(pistons, length, 0.3f);
                         state = State.Increase;
                         break;
                     }

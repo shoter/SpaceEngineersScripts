@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ExpandedBlueprintSettingsConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IngotBlueprints>
+    <BlueprintData>
+      <IngotBluepint OreType="Stone" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <IngotBluepint OreType="Ice" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <IngotBluepint OreType="Iron" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <IngotBluepint OreType="Nickel" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <IngotBluepint OreType="Silicon" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <IngotBluepint OreType="Cobalt" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <IngotBluepint OreType="Magnesium" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <IngotBluepint OreType="Silver" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <IngotBluepint OreType="Gold" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <IngotBluepint OreType="Platinum" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <IngotBluepint OreType="Uranium" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <IngotBluepint OreType="Scrap" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <IngotBluepint OreType="Organic" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <IngotBluepint OreType="Carcass" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <IngotBluepint OreType="Carapace" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <IngotBluepint OreType="Tentacle1" IngotYieldMultiplier="-1" ProductionTimeMultiplier="-1" />
+    </BlueprintData>
+  </IngotBlueprints>
+  <ComponentBlueprints>
+    <BlueprintData>
+      <ComponentBlueprint ComponentType="AdminPlate" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="BulletproofGlass" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="C100ShellCasing" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="Canvas" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="Computer" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="Construction" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="Credits" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="Detector" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="Display" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="EEMPilotSoul" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="EmptyTinCan" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="Explosives" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="Girder" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="GravityGenerator" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="InteriorPlate" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="K_HSR_AssemblerSystem" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="K_HSR_GelConduit" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="K_HSR_Globe" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="K_HSR_Globe_II" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="K_HSR_HexagolPlating" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="K_HSR_HexagolPlating_II" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="K_HSR_HyperConductiveCircuitry" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="K_HSR_Mainframe" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="K_HSR_Mainframe_K3" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="K_HSR_PulseSystem" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="K_HSR_RailComponents" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="K_HSR_RailComponents_II" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="K_HSR_RailComponents_III" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="LargeTube" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="Mainframe" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="Medical" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="MESThrust" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="MetalGrid" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="Motor" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="PowerCell" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="ProprietaryTech" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="RadioCommunication" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="Reactor" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="ShieldComponent" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="SmallTube" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="SolarCell" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="SteelPlate" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="Superconductor" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="Thrust" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ComponentBlueprint ComponentType="ZPM" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+    </BlueprintData>
+  </ComponentBlueprints>
+  <ToolBlueprints>
+    <BlueprintData>
+      <ToolBlueprint ToolType="WelderItem" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="Welder2Item" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="Welder3Item" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="Welder4Item" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="AngleGrinderItem" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="AngleGrinder2Item" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="AngleGrinder3Item" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="AngleGrinder4Item" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="HandDrillItem" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="HandDrill2Item" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="HandDrill3Item" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="HandDrill4Item" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="AutomaticRifleItem" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="RapidFireAutomaticRifleItem" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="PreciseAutomaticRifleItem" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="UltimateAutomaticRifleItem" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="SemiAutoPistolItem" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="FullAutoPistolItem" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="ElitePistolItem" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="BasicHandHeldLauncherItem" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <ToolBlueprint ToolType="AdvancedHandHeldLauncherItem" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+    </BlueprintData>
+  </ToolBlueprints>
+  <OtherBlueprints>
+    <BlueprintData>
+      <OtherBlueprint BlueprintType="OxygenBottle" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="HydrogenBottle" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="SemiAutoPistolMagazine" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="FullAutoPistolMagazine" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="ElitePistolMagazine" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="AutomaticRifleGun_Mag_20rd" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="RapidFireAutomaticRifleGun_Mag_50rd" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="PreciseAutomaticRifleGun_Mag_5rd" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="UltimateAutomaticRifleGun_Mag_30rd" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="NATO_25x184mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="Missile200mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="Datapad" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="FlakBelt" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="Lancer50standard" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="K_HSR_Slug" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="muninLightTorpedo1Ammo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="heavyTorpedo1Ammo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="hugin1missileAmmo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="heavyBallisticMissile1Ammo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="railgun35" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="railgun265" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="flakHE1000ammo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="flak1000ammo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="flak635ammo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="Raptor200x30" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="autocannon185fast" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="autocannon185" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="nariman70" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="gauss1200ammo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="Lancer50AP" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="ThresherEMP" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="LotusMissile" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="Eris88mmStack" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="CerberusStack" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="CenturianShell" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="ChimeraTank" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="CharybdisBomb" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="CycloneBomb" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="Kraken800mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="SledgehammerRound" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="Ares600mmHE" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="Nova88mmHEAT" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="Glaive" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="JSTRRocket" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="Sigma400mmHE" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="RailGunAmmoMag" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="CrusaderMissile" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="ThresherStunLock" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="ThresherMIRV" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="ThresherMissile" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="MK3CannonMagazineHE" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="C400AmmoCluster" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="PlasmaCell10MJ" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="HEShell460mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="HEShell420mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="ABShell40mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="WolfSlug40mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="APShell406mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="HEShell406mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="HEShell381mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="HEShell355mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="HEShell88mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="HEShell330mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="HEShell240mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="NATO_20x102mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="AutocannonClip" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="SmallRailgunAmmo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="LargeRailgunAmmo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="LargeCalibreAmmo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="MediumCalibreAmmo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="EMSlug460mm" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="MK3CannonMagazineAP" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="DroneMag" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="R75ammo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="C500AmmoCasaba" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="C500AmmoHE" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="C500AmmoAP" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="VXGaussRound" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="C400AmmoHE" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="C400AmmoAP" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="C300AmmoG" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="C300AmmoHE" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="C300AmmoAP" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="C100mmAmmo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="CRAM30mmAmmo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="C30DUammo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="C30Ammo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="H203AmmoAP" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="H203Ammo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="R250ammo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="R150ammo" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="Energy" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+      <OtherBlueprint BlueprintType="ArbiterMissile" IngotCostMultiplier="-1" ProductionTimeMultiplier="-1" />
+    </BlueprintData>
+  </OtherBlueprints>
+</ExpandedBlueprintSettingsConfig>

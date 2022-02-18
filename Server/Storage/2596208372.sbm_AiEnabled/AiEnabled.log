@@ -1,0 +1,16 @@
+[16:01:49.186] [T1] [DS=True] DEBUG | Log Started (v0.11b)
+[16:01:49.189] [T1] [DS=True] DEBUG | Defense Shields Mod found. API loaded successfully = True
+[16:01:49.189] [T1] [DS=True] DEBUG | Water Mod v16 Found
+[16:01:49.218] [T1] [DS=True] DEBUG | Faction cleanup: Removing 1 members from Space Pirates
+[16:01:49.233] [T1] [DS=True] DEBUG | Faction cleanup: Removing 5 members from Space spiders
+[16:01:49.234] [T1] [DS=True] DEBUG | Faction cleanup: Removing 1 members from Civilian
+[16:01:49.234] [T1] [DS=True] DEBUG | Faction cleanup: Removing 1 members from Military Forces
+[16:01:49.234] [T1] [DS=True] DEBUG | Faction cleanup: Removing 1 members from Space Police
+[16:01:49.234] [T1] [DS=True] DEBUG | Faction cleanup: Removing 1 members from Medveds Military Elite Corporation
+[16:01:49.234] [T1] [DS=True] DEBUG | Faction cleanup: Removing 1 members from Amphion Corp.
+[16:01:49.234] [T1] [DS=True] DEBUG | Faction cleanup: Removing 1 members from KUS Shipyards
+[16:01:49.234] [T1] [DS=True] DEBUG | Faction cleanup: Removing 1 members from Hyperion Systems
+[16:01:49.234] [T1] [DS=True] DEBUG | Faction cleanup: Removing 1 members from Mahriane Industries
+[16:01:49.234] [T1] [DS=True] DEBUG | Faction cleanup: Removing 1 members from Extraterrestrial Mining Corporation
+[16:01:49.234] [T1] [DS=True] DEBUG | Faction cleanup: Removing 1 members from Interstellar Mining and Defense Corporation
+[16:01:49.234] [T1] [DS=True] DEBUG | Faction cleanup: Removing 40 members from Raiders

@@ -35,7 +35,7 @@
     <RealisticSound>false</RealisticSound>
     <HackSpeedMultiplier>0.33</HackSpeedMultiplier>
     <PermanentDeath>false</PermanentDeath>
-    <AutoSaveInMinutes>20</AutoSaveInMinutes>
+    <AutoSaveInMinutes>5</AutoSaveInMinutes>
     <EnableSaving>true</EnableSaving>
     <InfiniteAmmo>false</InfiniteAmmo>
     <EnableContainerDrops>true</EnableContainerDrops>
@@ -136,6 +136,11 @@
     <EnableFactionPlayerNames>false</EnableFactionPlayerNames>
   </Settings>
   <Mods>
+    <ModItem FriendlyName="(DX11) Kolt - Command Console Pack">
+      <Name>436025957.sbm</Name>
+      <PublishedFileId>436025957</PublishedFileId>
+      <PublishedServiceName>Steam</PublishedServiceName>
+    </ModItem>
     <ModItem FriendlyName="Slow Cargo Ship Spawn Rate">
       <Name>888488248.sbm</Name>
       <PublishedFileId>888488248</PublishedFileId>
@@ -144,16 +149,6 @@
     <ModItem FriendlyName="_SD_Nature Addons">
       <Name>2358864048.sbm</Name>
       <PublishedFileId>2358864048</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="[Mexpex] MWI - Weapon Collection 2 [WeaponCore] (8)">
-      <Name>2082309225.sbm</Name>
-      <PublishedFileId>2082309225</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="[Mexpex] MWI - Weapon Collection 1 [WeaponCore](21)">
-      <Name>1920388300.sbm</Name>
-      <PublishedFileId>1920388300</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="[EEM] Exploration Enhancement Mod">
@@ -171,7 +166,7 @@
       <PublishedFileId>1931509062</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="WeaponCore - 2.2(5)-Stable">
+    <ModItem FriendlyName="WeaponCore - 2.2(5.4)-Stable">
       <Name>1918681825.sbm</Name>
       <PublishedFileId>1918681825</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
@@ -226,29 +221,9 @@
       <PublishedFileId>1135484957</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="Suppress Vanilla Encounters">
-      <Name>888457381.sbm</Name>
-      <PublishedFileId>888457381</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Suppress Vanilla Cargo Ships">
-      <Name>888457124.sbm</Name>
-      <PublishedFileId>888457124</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Stargate Atlantis Lantean Drone Platform">
-      <Name>1919124745.sbm</Name>
-      <PublishedFileId>1919124745</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="Space Just Got Real (1.188 Update 4)">
       <Name>1136188499.sbm</Name>
       <PublishedFileId>1136188499</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Shadeflare Keeper Armoury">
-      <Name>2026018464.sbm</Name>
-      <PublishedFileId>2026018464</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="SEWorldGenPlugin V2">
@@ -264,11 +239,6 @@
     <ModItem FriendlyName="S - Interior Walls - DX11">
       <Name>473306528.sbm</Name>
       <PublishedFileId>473306528</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Reduced Signals">
-      <Name>936325262.sbm</Name>
-      <PublishedFileId>936325262</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="Reddit Custom Encounters">
@@ -301,11 +271,6 @@
       <PublishedFileId>1793333265</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="Octo Beam Lasers">
-      <Name>1824060550.sbm</Name>
-      <PublishedFileId>1824060550</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="NPC Weapon Upgrades">
       <Name>1555044803.sbm</Name>
       <PublishedFileId>1555044803</PublishedFileId>
@@ -321,11 +286,6 @@
       <PublishedFileId>2043339470</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="NorthWind Weapons">
-      <Name>2016817336.sbm</Name>
-      <PublishedFileId>2016817336</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="No Suits">
       <Name>2269671355.sbm</Name>
       <PublishedFileId>2269671355</PublishedFileId>
@@ -339,11 +299,6 @@
     <ModItem FriendlyName="Nanobot Build and Repair System">
       <Name>857053359.sbm</Name>
       <PublishedFileId>857053359</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="MWI - Main Battleship Cannon Mk3 (DX11)">
-      <Name>419588209.sbm</Name>
-      <PublishedFileId>419588209</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="More NPC Encounters V6 - Rival Ai (Now with NPCs for Water Mod)">
@@ -366,11 +321,6 @@
       <PublishedFileId>1521905890</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="MCRN RailGun VX-12 Foehammer - MP!!!">
-      <Name>1824058403.sbm</Name>
-      <PublishedFileId>1824058403</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="Marine Pirate Encounters">
       <Name>2248416283.sbm</Name>
       <PublishedFileId>2248416283</PublishedFileId>
@@ -391,21 +341,6 @@
       <PublishedFileId>600062079</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="L.Y.N.X Industries - Weaponry [WeaponCore]">
-      <Name>2410783458.sbm</Name>
-      <PublishedFileId>2410783458</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Kolt - Command Console Pack">
-      <Name>304571628.sbm</Name>
-      <PublishedFileId>304571628</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Kimi &amp; Qun">
-      <Name>2459246911.sbm</Name>
-      <PublishedFileId>2459246911</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="Interface Block">
       <Name>2433117767.sbm</Name>
       <PublishedFileId>2433117767</PublishedFileId>
@@ -424,16 +359,6 @@
     <ModItem FriendlyName="H - Hallways">
       <Name>2259498958.sbm</Name>
       <PublishedFileId>2259498958</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Faster Cargo Ship Spawn Rate">
-      <Name>888487354.sbm</Name>
-      <PublishedFileId>888487354</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Fast Cargo Ship Spawn Rate">
-      <Name>888485827.sbm</Name>
-      <PublishedFileId>888485827</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="Expanded Settings">
@@ -521,11 +446,6 @@
       <PublishedFileId>298550266</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="(DX11)Laser Turret">
-      <Name>294617824.sbm</Name>
-      <PublishedFileId>294617824</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="(DX11)Interior Door">
       <Name>412986157.sbm</Name>
       <PublishedFileId>412986157</PublishedFileId>
@@ -534,11 +454,6 @@
     <ModItem FriendlyName="(DX11)Docking Ring">
       <Name>294619787.sbm</Name>
       <PublishedFileId>294619787</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="(DX11)Cryopods">
-      <Name>294618647.sbm</Name>
-      <PublishedFileId>294618647</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="(DX11)AI Core">
@@ -561,18 +476,24 @@
       <PublishedFileId>2368413383</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
+    <ModItem FriendlyName="HUD Compass">
+      <Name>1469072169.sbm</Name>
+      <PublishedFileId>1469072169</PublishedFileId>
+      <PublishedServiceName>Steam</PublishedServiceName>
+    </ModItem>
     <ModItem FriendlyName="Fix: AdvancedDoor opening/closing in construction stage">
       <Name>1735091878.sbm</Name>
       <PublishedFileId>1735091878</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
       <IsDependency>true</IsDependency>
     </ModItem>
-    <ModItem FriendlyName="HUD Compass">
-      <Name>1469072169.sbm</Name>
-      <PublishedFileId>1469072169</PublishedFileId>
+    <ModItem FriendlyName="Water Mod">
+      <Name>2200451495.sbm</Name>
+      <PublishedFileId>2200451495</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
+      <IsDependency>true</IsDependency>
     </ModItem>
   </Mods>
   <SessionName>ModryWorld2</SessionName>
-  <LastSaveTime>2022-02-16T21:59:57.1189808+01:00</LastSaveTime>
+  <LastSaveTime>2022-02-18T11:57:00.7757237+01:00</LastSaveTime>
 </MyObjectBuilder_WorldConfiguration>

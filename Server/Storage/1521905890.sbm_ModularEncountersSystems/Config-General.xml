@@ -18,7 +18,7 @@
   <IgnorePlanetBlacklists>false</IgnorePlanetBlacklists>
   <ThreatRefreshTimerMinimum>20</ThreatRefreshTimerMinimum>
   <ThreatReductionHandicap>0</ThreatReductionHandicap>
-  <MaxGlobalNpcGrids>80</MaxGlobalNpcGrids>
+  <MaxGlobalNpcGrids>100</MaxGlobalNpcGrids>
   <PlayerWatcherTimerTrigger>10</PlayerWatcherTimerTrigger>
   <NpcDistanceCheckTimerTrigger>10</NpcDistanceCheckTimerTrigger>
   <NpcOwnershipCheckTimerTrigger>10</NpcOwnershipCheckTimerTrigger>

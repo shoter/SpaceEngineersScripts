@@ -2,25 +2,25 @@
 <MyObjectBuilder_WorldConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Settings xsi:type="MyObjectBuilder_SessionSettings">
     <GameMode>Survival</GameMode>
-    <InventorySizeMultiplier>10</InventorySizeMultiplier>
+    <InventorySizeMultiplier>3</InventorySizeMultiplier>
     <BlocksInventorySizeMultiplier>1</BlocksInventorySizeMultiplier>
-    <AssemblerSpeedMultiplier>1</AssemblerSpeedMultiplier>
-    <AssemblerEfficiencyMultiplier>1</AssemblerEfficiencyMultiplier>
-    <RefinerySpeedMultiplier>1</RefinerySpeedMultiplier>
+    <AssemblerSpeedMultiplier>3</AssemblerSpeedMultiplier>
+    <AssemblerEfficiencyMultiplier>3</AssemblerEfficiencyMultiplier>
+    <RefinerySpeedMultiplier>3</RefinerySpeedMultiplier>
     <OnlineMode>PUBLIC</OnlineMode>
-    <MaxPlayers>12</MaxPlayers>
+    <MaxPlayers>4</MaxPlayers>
     <MaxFloatingObjects>100</MaxFloatingObjects>
-    <TotalBotLimit>58</TotalBotLimit>
-    <MaxBackupSaves>24</MaxBackupSaves>
+    <TotalBotLimit>32</TotalBotLimit>
+    <MaxBackupSaves>5</MaxBackupSaves>
     <MaxGridSize>0</MaxGridSize>
     <MaxBlocksPerPlayer>0</MaxBlocksPerPlayer>
-    <TotalPCU>1000000</TotalPCU>
-    <PiratePCU>3000000</PiratePCU>
-    <MaxFactionsCount>100</MaxFactionsCount>
+    <TotalPCU>100000</TotalPCU>
+    <PiratePCU>300000</PiratePCU>
+    <MaxFactionsCount>0</MaxFactionsCount>
     <BlockLimitsEnabled>GLOBALLY</BlockLimitsEnabled>
     <EnableRemoteBlockRemoval>true</EnableRemoteBlockRemoval>
     <EnvironmentHostility>SAFE</EnvironmentHostility>
-    <AutoHealing>false</AutoHealing>
+    <AutoHealing>true</AutoHealing>
     <EnableCopyPaste>false</EnableCopyPaste>
     <WeaponsEnabled>true</WeaponsEnabled>
     <ShowPlayerNamesOnHud>true</ShowPlayerNamesOnHud>
@@ -28,14 +28,14 @@
     <CargoShipsEnabled>false</CargoShipsEnabled>
     <EnableSpectator>false</EnableSpectator>
     <WorldSizeKm>0</WorldSizeKm>
-    <RespawnShipDelete>true</RespawnShipDelete>
+    <RespawnShipDelete>false</RespawnShipDelete>
     <ResetOwnership>false</ResetOwnership>
     <WelderSpeedMultiplier>2</WelderSpeedMultiplier>
     <GrinderSpeedMultiplier>2</GrinderSpeedMultiplier>
     <RealisticSound>false</RealisticSound>
     <HackSpeedMultiplier>0.33</HackSpeedMultiplier>
     <PermanentDeath>false</PermanentDeath>
-    <AutoSaveInMinutes>10</AutoSaveInMinutes>
+    <AutoSaveInMinutes>5</AutoSaveInMinutes>
     <EnableSaving>true</EnableSaving>
     <InfiniteAmmo>false</InfiniteAmmo>
     <EnableContainerDrops>true</EnableContainerDrops>
@@ -59,7 +59,7 @@
     <Scenario>false</Scenario>
     <CanJoinRunning>false</CanJoinRunning>
     <PhysicsIterations>8</PhysicsIterations>
-    <SunRotationIntervalMinutes>233.321045</SunRotationIntervalMinutes>
+    <SunRotationIntervalMinutes>119.999992</SunRotationIntervalMinutes>
     <EnableJetpack>true</EnableJetpack>
     <SpawnWithTools>true</SpawnWithTools>
     <StartInRespawnScreen>false</StartInRespawnScreen>
@@ -77,9 +77,9 @@
     <EnableScripterRole>false</EnableScripterRole>
     <MinDropContainerRespawnTime>5</MinDropContainerRespawnTime>
     <MaxDropContainerRespawnTime>20</MaxDropContainerRespawnTime>
-    <EnableTurretsFriendlyFire>true</EnableTurretsFriendlyFire>
+    <EnableTurretsFriendlyFire>false</EnableTurretsFriendlyFire>
     <EnableSubgridDamage>false</EnableSubgridDamage>
-    <SyncDistance>3000</SyncDistance>
+    <SyncDistance>4000</SyncDistance>
     <ExperimentalMode>true</ExperimentalMode>
     <AdaptiveSimulationQuality>true</AdaptiveSimulationQuality>
     <EnableVoxelHand>true</EnableVoxelHand>
@@ -97,10 +97,10 @@
     <VoxelPlayerDistanceThreshold>5000</VoxelPlayerDistanceThreshold>
     <VoxelGridDistanceThreshold>5000</VoxelGridDistanceThreshold>
     <VoxelAgeThreshold>24</VoxelAgeThreshold>
-    <EnableResearch>false</EnableResearch>
+    <EnableResearch>true</EnableResearch>
     <EnableGoodBotHints>true</EnableGoodBotHints>
     <OptimalSpawnDistance>16000</OptimalSpawnDistance>
-    <EnableAutorespawn>false</EnableAutorespawn>
+    <EnableAutorespawn>true</EnableAutorespawn>
     <EnableBountyContracts>true</EnableBountyContracts>
     <EnableSupergridding>false</EnableSupergridding>
     <EnableEconomy>true</EnableEconomy>
@@ -296,11 +296,6 @@
       <PublishedFileId>857053359</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="More NPC Encounters V5">
-      <Name>1775277473.sbm</Name>
-      <PublishedFileId>1775277473</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="More Interior Blocks">
       <Name>2499607200.sbm</Name>
       <PublishedFileId>2499607200</PublishedFileId>
@@ -444,5 +439,5 @@
     </ModItem>
   </Mods>
   <SessionName>ModryWorld2</SessionName>
-  <LastSaveTime>2022-02-21T16:50:00.4029982+01:00</LastSaveTime>
+  <LastSaveTime>2022-02-21T17:58:15.4372926+01:00</LastSaveTime>
 </MyObjectBuilder_WorldConfiguration>

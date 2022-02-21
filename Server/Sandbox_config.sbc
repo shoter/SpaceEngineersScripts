@@ -35,7 +35,7 @@
     <RealisticSound>false</RealisticSound>
     <HackSpeedMultiplier>0.33</HackSpeedMultiplier>
     <PermanentDeath>false</PermanentDeath>
-    <AutoSaveInMinutes>20</AutoSaveInMinutes>
+    <AutoSaveInMinutes>10</AutoSaveInMinutes>
     <EnableSaving>true</EnableSaving>
     <InfiniteAmmo>false</InfiniteAmmo>
     <EnableContainerDrops>true</EnableContainerDrops>
@@ -136,11 +136,6 @@
     <EnableFactionPlayerNames>false</EnableFactionPlayerNames>
   </Settings>
   <Mods>
-    <ModItem FriendlyName="(DX11) Kolt - Command Console Pack">
-      <Name>436025957.sbm</Name>
-      <PublishedFileId>436025957</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="Slow Cargo Ship Spawn Rate">
       <Name>888488248.sbm</Name>
       <PublishedFileId>888488248</PublishedFileId>
@@ -166,7 +161,7 @@
       <PublishedFileId>1931509062</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="WeaponCore - 2.2(5.5)-Stable">
+    <ModItem FriendlyName="WeaponCore - 2.2(5.6)-Stable">
       <Name>1918681825.sbm</Name>
       <PublishedFileId>1918681825</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
@@ -301,11 +296,6 @@
       <PublishedFileId>857053359</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="More NPC Encounters V6 - Rival Ai (Now with NPCs for Water Mod)">
-      <Name>2043717871.sbm</Name>
-      <PublishedFileId>2043717871</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="More NPC Encounters V5">
       <Name>1775277473.sbm</Name>
       <PublishedFileId>1775277473</PublishedFileId>
@@ -319,11 +309,6 @@
     <ModItem FriendlyName="Modular Encounters Systems">
       <Name>1521905890.sbm</Name>
       <PublishedFileId>1521905890</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Marine Pirate Encounters">
-      <Name>2248416283.sbm</Name>
-      <PublishedFileId>2248416283</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="MA Admiral Suite">
@@ -401,16 +386,6 @@
       <PublishedFileId>1464803311</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="Assertive Cargo Ships">
-      <Name>1902970975.sbm</Name>
-      <PublishedFileId>1902970975</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Assertive Bunkers">
-      <Name>1945915721.sbm</Name>
-      <PublishedFileId>1945915721</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="Akiad Development - Heavy Ship Tools">
       <Name>2418281255.sbm</Name>
       <PublishedFileId>2418281255</PublishedFileId>
@@ -424,16 +399,6 @@
     <ModItem FriendlyName="Air Traffic">
       <Name>973526550.sbm</Name>
       <PublishedFileId>973526550</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Advanced Systems: Scaffolding">
-      <Name>717073267.sbm</Name>
-      <PublishedFileId>717073267</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Abandoned Settlements">
-      <Name>2310821218.sbm</Name>
-      <PublishedFileId>2310821218</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="(DX11)Power Lines">
@@ -451,19 +416,9 @@
       <PublishedFileId>412986157</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="(DX11)Docking Ring">
-      <Name>294619787.sbm</Name>
-      <PublishedFileId>294619787</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="(DX11)AI Core">
       <Name>294620323.sbm</Name>
       <PublishedFileId>294620323</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="(DX11) Small Medical Station">
-      <Name>412134393.sbm</Name>
-      <PublishedFileId>412134393</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="(DX11) Eikesters Decorations and more - Part II">
@@ -487,13 +442,7 @@
       <PublishedServiceName>Steam</PublishedServiceName>
       <IsDependency>true</IsDependency>
     </ModItem>
-    <ModItem FriendlyName="Water Mod">
-      <Name>2200451495.sbm</Name>
-      <PublishedFileId>2200451495</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-      <IsDependency>true</IsDependency>
-    </ModItem>
   </Mods>
   <SessionName>ModryWorld2</SessionName>
-  <LastSaveTime>2022-02-20T14:00:47.6834017+01:00</LastSaveTime>
+  <LastSaveTime>2022-02-21T16:50:00.4029982+01:00</LastSaveTime>
 </MyObjectBuilder_WorldConfiguration>

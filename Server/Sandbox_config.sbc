@@ -75,8 +75,8 @@
       <dictionary />
     </BlockTypeLimits>
     <EnableScripterRole>false</EnableScripterRole>
-    <MinDropContainerRespawnTime>5</MinDropContainerRespawnTime>
-    <MaxDropContainerRespawnTime>20</MaxDropContainerRespawnTime>
+    <MinDropContainerRespawnTime>10</MinDropContainerRespawnTime>
+    <MaxDropContainerRespawnTime>30</MaxDropContainerRespawnTime>
     <EnableTurretsFriendlyFire>true</EnableTurretsFriendlyFire>
     <EnableSubgridDamage>false</EnableSubgridDamage>
     <SyncDistance>4000</SyncDistance>
@@ -86,13 +86,13 @@
     <RemoveOldIdentitiesH>0</RemoveOldIdentitiesH>
     <TrashRemovalEnabled>true</TrashRemovalEnabled>
     <StopGridsPeriodMin>15</StopGridsPeriodMin>
-    <TrashFlagsValue>7706</TrashFlagsValue>
+    <TrashFlagsValue>1562</TrashFlagsValue>
     <AFKTimeountMin>0</AFKTimeountMin>
     <BlockCountThreshold>20</BlockCountThreshold>
     <PlayerDistanceThreshold>500</PlayerDistanceThreshold>
     <OptimalGridCount>0</OptimalGridCount>
     <PlayerInactivityThreshold>0</PlayerInactivityThreshold>
-    <PlayerCharacterRemovalThreshold>15</PlayerCharacterRemovalThreshold>
+    <PlayerCharacterRemovalThreshold>1800</PlayerCharacterRemovalThreshold>
     <VoxelTrashRemovalEnabled>false</VoxelTrashRemovalEnabled>
     <VoxelPlayerDistanceThreshold>5000</VoxelPlayerDistanceThreshold>
     <VoxelGridDistanceThreshold>5000</VoxelGridDistanceThreshold>
@@ -107,7 +107,7 @@
     <DepositsCountCoefficient>1</DepositsCountCoefficient>
     <DepositSizeDenominator>60</DepositSizeDenominator>
     <WeatherSystem>true</WeatherSystem>
-    <HarvestRatioMultiplier>0.8</HarvestRatioMultiplier>
+    <HarvestRatioMultiplier>1</HarvestRatioMultiplier>
     <TradeFactionsCount>15</TradeFactionsCount>
     <StationsDistanceInnerRadius>10000000</StationsDistanceInnerRadius>
     <StationsDistanceOuterRadiusStart>10000000</StationsDistanceOuterRadiusStart>
@@ -161,7 +161,7 @@
       <PublishedFileId>1931509062</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="WeaponCore - 2.2(5.6)-Stable">
+    <ModItem FriendlyName="WeaponCore - 2.2(7)-Stable">
       <Name>1918681825.sbm</Name>
       <PublishedFileId>1918681825</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
@@ -249,11 +249,6 @@
     <ModItem FriendlyName="Plugin Loader">
       <Name>2407984968.sbm</Name>
       <PublishedFileId>2407984968</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Planet Creature Spawner">
-      <Name>2371761016.sbm</Name>
-      <PublishedFileId>2371761016</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="Perpetually Perturbed Pirates">
@@ -416,11 +411,6 @@
       <PublishedFileId>294620323</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="(DX11) Eikesters Decorations and more - Part II">
-      <Name>337774723.sbm</Name>
-      <PublishedFileId>337774723</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="(AR) Wind &amp; Solar Energy">
       <Name>2368413383.sbm</Name>
       <PublishedFileId>2368413383</PublishedFileId>
@@ -439,5 +429,5 @@
     </ModItem>
   </Mods>
   <SessionName>ModryWorld2</SessionName>
-  <LastSaveTime>2022-02-21T16:50:00.4029982+01:00</LastSaveTime>
+  <LastSaveTime>2022-02-25T22:07:24.1258158+01:00</LastSaveTime>
 </MyObjectBuilder_WorldConfiguration>

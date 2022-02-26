@@ -156,16 +156,6 @@
       <PublishedFileId>297110720</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="WeaponCore - Replace Vanilla Weapons">
-      <Name>1931509062.sbm</Name>
-      <PublishedFileId>1931509062</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="WeaponCore - 2.2(7)-Stable">
-      <Name>1918681825.sbm</Name>
-      <PublishedFileId>1918681825</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="Wave Spawner (Space)">
       <Name>1773965697.sbm</Name>
       <PublishedFileId>1773965697</PublishedFileId>
@@ -174,11 +164,6 @@
     <ModItem FriendlyName="Wasteland Encounters">
       <Name>2345298530.sbm</Name>
       <PublishedFileId>2345298530</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Ultimate Small Grid Conversion Pack">
-      <Name>2230632087.sbm</Name>
-      <PublishedFileId>2230632087</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="Travelling Merchant | Space and Planetary trader NPC Ships">
@@ -214,11 +199,6 @@
     <ModItem FriendlyName="Surface Occupation">
       <Name>1135484957.sbm</Name>
       <PublishedFileId>1135484957</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Space Just Got Real (1.188 Update 4)">
-      <Name>1136188499.sbm</Name>
-      <PublishedFileId>1136188499</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="SEWorldGenPlugin V2">
@@ -281,11 +261,6 @@
       <PublishedFileId>2269671355</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="No More Free Energy!">
-      <Name>2189531971.sbm</Name>
-      <PublishedFileId>2189531971</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="Nanobot Build and Repair System">
       <Name>857053359.sbm</Name>
       <PublishedFileId>857053359</PublishedFileId>
@@ -319,11 +294,6 @@
     <ModItem FriendlyName="Interface Block">
       <Name>2433117767.sbm</Name>
       <PublishedFileId>2433117767</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="HSR (WeaponCore) Strategic Update November 2020">
-      <Name>1383538199.sbm</Name>
-      <PublishedFileId>1383538199</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="Hollow Planet Clean-Up">
@@ -381,11 +351,6 @@
       <PublishedFileId>2418281255</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="Akiad Development - Akiad Defense 2.0 (CoreParts)">
-      <Name>2408838606.sbm</Name>
-      <PublishedFileId>2408838606</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="Air Traffic">
       <Name>973526550.sbm</Name>
       <PublishedFileId>973526550</PublishedFileId>
@@ -429,5 +394,5 @@
     </ModItem>
   </Mods>
   <SessionName>ModryWorld2</SessionName>
-  <LastSaveTime>2022-02-25T22:07:24.1258158+01:00</LastSaveTime>
+  <LastSaveTime>2022-02-26T19:50:43.0747474+01:00</LastSaveTime>
 </MyObjectBuilder_WorldConfiguration>

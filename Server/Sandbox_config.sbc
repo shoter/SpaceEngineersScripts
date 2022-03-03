@@ -30,8 +30,8 @@
     <WorldSizeKm>0</WorldSizeKm>
     <RespawnShipDelete>true</RespawnShipDelete>
     <ResetOwnership>false</ResetOwnership>
-    <WelderSpeedMultiplier>2</WelderSpeedMultiplier>
-    <GrinderSpeedMultiplier>2</GrinderSpeedMultiplier>
+    <WelderSpeedMultiplier>4</WelderSpeedMultiplier>
+    <GrinderSpeedMultiplier>4</GrinderSpeedMultiplier>
     <RealisticSound>false</RealisticSound>
     <HackSpeedMultiplier>0.33</HackSpeedMultiplier>
     <PermanentDeath>false</PermanentDeath>
@@ -88,7 +88,7 @@
     <StopGridsPeriodMin>15</StopGridsPeriodMin>
     <TrashFlagsValue>1562</TrashFlagsValue>
     <AFKTimeountMin>0</AFKTimeountMin>
-    <BlockCountThreshold>20</BlockCountThreshold>
+    <BlockCountThreshold>250</BlockCountThreshold>
     <PlayerDistanceThreshold>500</PlayerDistanceThreshold>
     <OptimalGridCount>0</OptimalGridCount>
     <PlayerInactivityThreshold>0</PlayerInactivityThreshold>
@@ -189,11 +189,6 @@
     <ModItem FriendlyName="Text HUD API">
       <Name>758597413.sbm</Name>
       <PublishedFileId>758597413</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Terra - realistic geography">
-      <Name>857927916.sbm</Name>
-      <PublishedFileId>857927916</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="Surface Occupation">
@@ -306,11 +301,6 @@
       <PublishedFileId>2259498958</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="Expanded Settings">
-      <Name>2275037102.sbm</Name>
-      <PublishedFileId>2275037102</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="Defense Shields - v2.0(38)">
       <Name>1365616918.sbm</Name>
       <PublishedFileId>1365616918</PublishedFileId>
@@ -386,13 +376,29 @@
       <PublishedFileId>1469072169</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
+    <ModItem FriendlyName="WeaponCore - 2.2(8)-Stable">
+      <Name>1918681825.sbm</Name>
+      <PublishedFileId>1918681825</PublishedFileId>
+      <PublishedServiceName>Steam</PublishedServiceName>
+    </ModItem>
+    <ModItem FriendlyName="WCVanilla Spejsy">
+      <Name>2767425712.sbm</Name>
+      <PublishedFileId>2767425712</PublishedFileId>
+      <PublishedServiceName>Steam</PublishedServiceName>
+    </ModItem>
     <ModItem FriendlyName="Fix: AdvancedDoor opening/closing in construction stage">
       <Name>1735091878.sbm</Name>
       <PublishedFileId>1735091878</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
       <IsDependency>true</IsDependency>
     </ModItem>
+    <ModItem FriendlyName="More Pistons">
+      <Name>1719832915.sbm</Name>
+      <PublishedFileId>1719832915</PublishedFileId>
+      <PublishedServiceName>Steam</PublishedServiceName>
+      <IsDependency>true</IsDependency>
+    </ModItem>
   </Mods>
   <SessionName>ModryWorld2</SessionName>
-  <LastSaveTime>2022-02-26T19:50:43.0747474+01:00</LastSaveTime>
+  <LastSaveTime>2022-03-03T20:51:06.9775909+01:00</LastSaveTime>
 </MyObjectBuilder_WorldConfiguration>

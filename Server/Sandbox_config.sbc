@@ -9,7 +9,7 @@
     <RefinerySpeedMultiplier>1</RefinerySpeedMultiplier>
     <OnlineMode>PUBLIC</OnlineMode>
     <MaxPlayers>12</MaxPlayers>
-    <MaxFloatingObjects>100</MaxFloatingObjects>
+    <MaxFloatingObjects>8</MaxFloatingObjects>
     <TotalBotLimit>58</TotalBotLimit>
     <MaxBackupSaves>24</MaxBackupSaves>
     <MaxGridSize>0</MaxGridSize>
@@ -141,19 +141,9 @@
       <PublishedFileId>888488248</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="_SD_Nature Addons">
-      <Name>2358864048.sbm</Name>
-      <PublishedFileId>2358864048</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="[EEM] Exploration Enhancement Mod">
       <Name>531659576.sbm</Name>
       <PublishedFileId>531659576</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="[Dx11]DeadTech - MessHall Pack">
-      <Name>297110720.sbm</Name>
-      <PublishedFileId>297110720</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="Wave Spawner (Space)">
@@ -161,39 +151,14 @@
       <PublishedFileId>1773965697</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="Wasteland Encounters">
-      <Name>2345298530.sbm</Name>
-      <PublishedFileId>2345298530</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="Travelling Merchant | Space and Planetary trader NPC Ships">
       <Name>1843206463.sbm</Name>
       <PublishedFileId>1843206463</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="Tool Switcher">
-      <Name>2211605465.sbm</Name>
-      <PublishedFileId>2211605465</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="The Little Things - It Takes a Village">
-      <Name>2186043212.sbm</Name>
-      <PublishedFileId>2186043212</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="The Little Things">
-      <Name>2178114846.sbm</Name>
-      <PublishedFileId>2178114846</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="Text HUD API">
       <Name>758597413.sbm</Name>
       <PublishedFileId>758597413</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="Surface Occupation">
-      <Name>1135484957.sbm</Name>
-      <PublishedFileId>1135484957</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="SEWorldGenPlugin V2">
@@ -291,11 +256,6 @@
       <PublishedFileId>2433117767</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="Hollow Planet Clean-Up">
-      <Name>950648865.sbm</Name>
-      <PublishedFileId>950648865</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="H - Hallways">
       <Name>2259498958.sbm</Name>
       <PublishedFileId>2259498958</PublishedFileId>
@@ -331,11 +291,6 @@
       <PublishedFileId>745959935</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="Assertive Installations">
-      <Name>1464803311.sbm</Name>
-      <PublishedFileId>1464803311</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="Akiad Development - Heavy Ship Tools">
       <Name>2418281255.sbm</Name>
       <PublishedFileId>2418281255</PublishedFileId>
@@ -346,24 +301,9 @@
       <PublishedFileId>973526550</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="(DX11)Power Lines">
-      <Name>577318708.sbm</Name>
-      <PublishedFileId>577318708</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="(DX11)Letters Mod">
-      <Name>298550266.sbm</Name>
-      <PublishedFileId>298550266</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="(DX11)Interior Door">
       <Name>412986157.sbm</Name>
       <PublishedFileId>412986157</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
-    <ModItem FriendlyName="(DX11)AI Core">
-      <Name>294620323.sbm</Name>
-      <PublishedFileId>294620323</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
     <ModItem FriendlyName="(AR) Wind &amp; Solar Energy">
@@ -400,5 +340,5 @@
     </ModItem>
   </Mods>
   <SessionName>ModryWorld2</SessionName>
-  <LastSaveTime>2022-03-03T20:51:06.9775909+01:00</LastSaveTime>
+  <LastSaveTime>2022-03-03T20:31:06.9599756+01:00</LastSaveTime>
 </MyObjectBuilder_WorldConfiguration>

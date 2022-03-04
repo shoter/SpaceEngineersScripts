@@ -57,6 +57,7 @@
     <Compile Include="Hinge.cs" />
     <Compile Include="Hinge3D.cs" />
     <Compile Include="Miner.cs" />
+    <Compile Include="Rocket.cs" />
     <Compile Include="starter-template.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

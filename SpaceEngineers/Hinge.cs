@@ -25,20 +25,21 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
 
         public enum State
         {
+            Init,
             Increase,
             Decrease,
             MoveForward,
             Reset,
         };
 
-        public static State state = State.Increase;
-        public static float speed = 1f;
+        public static State state = State.Init;
+        public static float speed = 2f;
         public static string hingeName = "Miner.Hinge";
         public static string motorPrefix = "Miner";
         public static float length = 0f;
 
 
-        public int GetLength(List<IMyPistonBase> pistons) => pistons.Count * 10;
+        public float GetMaxLength(List<IMyPistonBase> pistons) => pistons.Sum(p => p.HighestPosition);
 
         public float GetCurrentLength(List<IMyPistonBase> pistons)
         {
@@ -61,7 +62,7 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
             {
                 if (length > 0)
                 {
-                    float appliedLength = length > 10 ? 10 : length;
+                    float appliedLength = length > pistons[i].HighestPosition ? pistons[i].HighestPosition : length;
                     float velocity = length > pistons[i].CurrentPosition ? speed : -speed;
 
                     pistons[i].Velocity = velocity;
@@ -82,21 +83,15 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
             for (int i = 0; i < pistons.Count; ++i)
             {
                 pistons[i].Velocity = speed;
-                pistons[i].MaxLimit = 10f;
+                pistons[i].MaxLimit = pistons[i].HighestPosition;
             }
         }
-
-        public float GetMaxLength(List<IMyPistonBase> pistons)
-        {
-            return pistons.Count * 10f;
-        }
-
 
         public bool IsMaxLengthReached(List<IMyPistonBase> pistons)
         {
             for (int i = 0; i < pistons.Count; ++i)
             {
-                if (Math.Abs(pistons[i].CurrentPosition - 10) > 0.01f)
+                if (Math.Abs(pistons[i].CurrentPosition - pistons[i].HighestPosition) > 0.01f)
                 {
                     return false;
                 }
@@ -145,14 +140,6 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
             return Math.Abs(a - b) < 0.01f;
         }
 
-        public void SetUp(List<IMyPistonBase> pistons)
-        {
-            foreach (var p in pistons)
-            {
-                p.MaxLimit = 10f;
-            }
-        }
-
         public static bool Equal(float a, float b, float diff)
         {
             return Math.Abs(a - b) <= diff;
@@ -175,13 +162,17 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
                 return;
             }
 
-            length = GetCurrentLength(pistons);
-
             Echo($"State = {state} {hinge.LowerLimitRad} | {hinge.Angle} | {hinge.UpperLimitRad}");
             Echo($"Length = {length}");
-            Echo($"Real Length = {GetCurrentLength(pistons)} ( {pistons.Count} )");
+            Echo($"Real Length = {GetCurrentLength(pistons)} ( {pistons.Count} ) - {GetMaxLength(pistons)}");
             switch (state)
             {
+                case State.Init:
+                    {
+                        length = GetCurrentLength(pistons);
+                        state = State.Increase;
+                        break;
+                    }
                 case State.Increase:
                     {
                         hinge.TargetVelocityRPM = speed * 0.25f;
@@ -203,7 +194,7 @@ namespace SpaceEngineers.UWBlockPrograms.Miner
                     }
                 case State.MoveForward:
                     {
-                        length += 1f;
+                        length += 2f;
                         SetLength(pistons, length, 0.3f);
                         state = State.Increase;
                         break;
